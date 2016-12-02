@@ -690,6 +690,7 @@ An alternative approach to Pundit policy specs is scoping them to a user context
 
 # External Resources
 
+- http://www.slideshare.net/BruceWhite3/pundit-37048056
 - [RailsApps Example Application: Pundit and Devise](https://github.com/RailsApps/rails-devise-pundit)
 - [Migrating to Pundit from CanCan](http://blog.carbonfive.com/2013/10/21/migrating-to-pundit-from-cancan/)
 - [Testing Pundit Policies with RSpec](http://thunderboltlabs.com/blog/2013/03/27/testing-pundit-policies-with-rspec/)
