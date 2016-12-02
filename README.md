@@ -1,5 +1,9 @@
 # Pundit
 
+**EXAMPLE**: <https://gist.github.com/seyyah/8a7df5c331134939b9f18eae5ffbf57f>
+
+<script src="https://gist.github.com/seyyah/8a7df5c331134939b9f18eae5ffbf57f.js"></script>
+
 [![Build Status](https://secure.travis-ci.org/elabs/pundit.svg?branch=master)](https://travis-ci.org/elabs/pundit)
 [![Code Climate](https://codeclimate.com/github/elabs/pundit.svg)](https://codeclimate.com/github/elabs/pundit)
 [![Inline docs](http://inch-ci.org/github/elabs/pundit.svg?branch=master)](http://inch-ci.org/github/elabs/pundit)
