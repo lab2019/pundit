@@ -313,6 +313,9 @@ def index
 end
 ```
 
+- `policy_scope(Post)` == `PostPolicy::Scope.new(current_user, Post).resolve`
+- `authorize Post` == `PostPolicy.new(current_user, Post).admin_list?`
+
 You can, and are encouraged to, use this method in views:
 
 ``` erb
