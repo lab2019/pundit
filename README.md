@@ -69,14 +69,17 @@ end
 As you can see, this is just a plain Ruby class. Pundit makes the following
 assumptions about this class:
 
-- The class has the same name as some kind of model class, only suffixed
-  with the word "Policy".
-- The first argument is a user. In your controller, Pundit will call the
+- `PostPolicy`: `Post` model
+  + The class has the same name as some kind of model class, only suffixed with the word "Policy".
+- `user`: `current_user`
+  + The first argument is a user. In your controller, Pundit will call the
   `current_user` method to retrieve what to send into this argument
-- The second argument is some kind of model object, whose authorization
+- `post`: `Post` instance
+  + The second argument is some kind of model object, whose authorization
   you want to check. This does not need to be an ActiveRecord or even
   an ActiveModel object, it can be anything really.
-- The class implements some kind of query method, in this case `update?`.
+- `update?`: `update` controller method
+  + The class implements some kind of query method, in this case `update?`.
   Usually, this will map to the name of a particular controller action.
 
 That's it really.
