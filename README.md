@@ -52,6 +52,7 @@ these classes in `app/policies`. This is a simple example that allows updating
 a post if the user is an admin, or if the post is unpublished:
 
 ``` ruby
+# v1
 class PostPolicy
   attr_reader :user, :post
 
@@ -88,6 +89,7 @@ Usually you'll want to inherit from the application policy created by the
 generator, or set up your own base class to inherit from:
 
 ``` ruby
+# v2
 class PostPolicy < ApplicationPolicy
   def update?
     user.admin? or not record.published?
@@ -96,6 +98,9 @@ end
 ```
 
 In the generated `ApplicationPolicy`, the model object is called `record`.
+
+- `record`: `ApplicationPolicy`. So `record.published?`
+- `post`: `PostPolicy`. So `post.published?` + `attr_reader` + `initialize`
 
 Supposing that you have an instance of class `Post`, Pundit now lets you do
 this in your controller:
