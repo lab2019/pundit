@@ -129,6 +129,11 @@ unless PostPolicy.new(current_user, @post).update?
 end
 ```
 
+**authorize @post**: `PostPolicy.new(current_user, @post).update?`
+- `@post`: `Post` modelinin policy'sine ulaşır: `PostPolicy`
+- `PostPolicy`'un `initialize` methodu `current_user, @post` ile çağrılır
+- controller methodu `update` olduğundan `update?` metodu çağrılır.
+
 You can pass a second argument to `authorize` if the name of the permission you
 want to check doesn't match the action name. For example:
 
